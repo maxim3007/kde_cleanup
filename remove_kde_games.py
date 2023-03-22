@@ -27,7 +27,7 @@ def removepkg(name):
     proc = sb.Popen(cmd, shell=True)
     proc.wait()
     if proc.returncode == 0:
-        print(f"removed {pkg}")
+        print(f"removed {name}")
     else:
         print(f"{package_man} exited with non-zero code!")
 
